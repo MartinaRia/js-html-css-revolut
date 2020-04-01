@@ -54,10 +54,7 @@ a{
   border: none;
   cursor: pointer;
 }
-.icon-hamburger{
-  flex-direction: column;
-  margin: 10px;
-}
+
 
 /* style per elementi a comparsa---- */
 .link-links{
@@ -71,9 +68,46 @@ a{
   transform: translateX(-50%);
   padding: 0.5rem 0px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  display: none;
 }
 .sub-menu li{
   padding: 0.8rem 1.6rem;
   margin: 0px;
   white-space: nowrap;
+}
+
+/* mobile */
+.icon-hamburger{
+  flex-direction: column;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu-mobile{
+  display: none;
+}
+
+.mobile-container{
+  width: 90%;
+  margin: 0px auto;
+}
+.mob-sub-menu{
+  display: none;
+  opacity: 0.5; /* DEBUG:  */
+}
+
+/* MAXI DESKTOP -------------------------------- */
+@media screen and (min-width: 1080px) and (max-width:2000px ){
+  .icon-hamburger{
+    display: none;
+  }
+
+}
+
+/* DESKTOP -------------------------------- */
+@media screen and (max-width: 1079px) {
+  .p-b, .links{
+    display: none;
+  }
+
 }
