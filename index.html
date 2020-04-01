@@ -28,17 +28,62 @@
 
           <!-- blocco sinistra -->
           <div class="left flex-container">
-            <ul class="links flex-container">
-              <li>Pricing</li>
-              <li>Accounts</li>
-              <li>Products</li>
-              <li>Company</li>
-              <li>Help</li>
-            </ul>
+            <!-- links con sottomenu-->
+              <ul class="links flex-container">
+                <li>Pricing</li>
+
+                <li class="link-links">
+                  <a href="#">Accounts</a>
+                  <ul class="sub-menu">
+                    <li>Standard</li>
+                    <li>Premium</li>
+                    <li>Metal</li>
+                  </ul>
+                </li>
+
+                <li class="link-links"">
+                  <a href="#">Products</a>
+                  <ul class="sub-menu">
+                    <li>Money Transfers</li>
+                    <li>Send and Request Payments</li>
+                    <li>Vaults</li>
+                    <li>Budgeting</li>
+                    <li>Cryptocurrency</li>
+                    <li>Mobile Phone Insurance</li>
+                    <li>Apple Pay</li>
+                    <li>Donations</li>
+                    <li>Commodities</li>
+                  </ul>
+                </li>
+
+                <li class="link-links"">
+                  <a href="#">Company</a>
+                  <ul class="sub-menu">
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Affiliates</li>
+                    <li>Influencers</li>
+                    <li>Open Banking API</li>
+                    <li>Contact</li>
+                  </ul>
+                </li>
+
+                <li class="link-links"">
+                  <a href="#">Help</a>
+                  <ul class="sub-menu">
+                    <li>Community</li>
+                    <li>Help center</li>
+                    <li>Security</li>
+                    <li>System Status</li>
+                  </ul>
+                </li>
+
+              </ul>
             <!-- bottone rosa -->
             <button id="only-btn"type="button" name="button">Get the App</button>
             <!-- icona hamburger -->
-            <div class="icon-hamburger">
+            <div class="icon-hamburger flex-container">
               <img src="img/minus.png" alt="">
               <img src="img/minus.png" alt="">
             </div>
@@ -47,5 +92,9 @@
         </div><!-- /container  -->
       </nav>
     </header>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

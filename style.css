@@ -11,23 +11,26 @@ body{
 li{
   list-style-type: none;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .flex-container{
   display: flex;
 }
-
 .container{
   padding: 2.5rem 3rem;
   justify-content: space-between;
   align-items: center;
 }
 
+/* style generale ------------- */
 .logo{
   width: 121px;
   height: 28px;
   margin-right: 1.7rem;
+  cursor: pointer;
 }
-
 .p-b {
   align-items: flex-end;
 }
@@ -37,10 +40,9 @@ li{
 .p-b li, .links li{
   margin-right: 1.7rem;
 
-  opacity: 0.5;
+  color: #808080;
+  cursor: pointer;
 }
-
-
 #only-btn{
   background: rgb(235, 0, 141);
   border-radius: 20px;
@@ -50,4 +52,28 @@ li{
   font-size: inherit;
   color: white;
   border: none;
+  cursor: pointer;
+}
+.icon-hamburger{
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* style per elementi a comparsa---- */
+.link-links{
+  position: relative;
+}
+.sub-menu{
+  position: absolute;
+  margin-top: 0.5rem;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  padding: 0.5rem 0px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+}
+.sub-menu li{
+  padding: 0.8rem 1.6rem;
+  margin: 0px;
+  white-space: nowrap;
 }
