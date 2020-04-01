@@ -1,0 +1,53 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.container{
+  padding: 2.5rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 121px;
+  height: 28px;
+  margin-right: 1.7rem;
+}
+
+.p-b {
+  align-items: flex-end;
+}
+.links{
+  align-items: center;
+}
+.p-b li, .links li{
+  margin-right: 1.7rem;
+
+  opacity: 0.5;
+}
+
+
+#only-btn{
+  background: rgb(235, 0, 141);
+  border-radius: 20px;
+  padding: 0.625em 1.5em;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  color: white;
+  border: none;
+}
